@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Forms - Cadastro de series</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/post.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastrar Series</h1>
+            <p>Preencha os dados abaixo!</p>
+        </header>
+
+        <main>
+            <a href="pages/get.html">Consultar series →</a>
+            <sectiom id="formulario" method="post">
+                <form id="form-series">
+                    <h2>Nova series</h2>
+
+                    <label for="title">Nome da serie:</label>
+                    <input id="title" name="title" type="text" minlength="3" maxlength="120" required/>
+                    
+                    <label for="genero">Gênero:</label>
+                    <input id="genero" name="genero" type="text" minlength="3" maxlength="120" required/>
+
+                    <label for="plataforma">Plataforma:</label>
+                    <input id="plataforma" name="plataforma" type="text" minlength="3" maxlength="120" required/>
+
+                    <label for="ano_lancamento">Ano de lançamento:</label>
+                    <input id="ano_lancamento" name="ano_lancamento" type="number" minlength="4" maxlength="5" required/>
+
+                    <label for="numero_temporads">Numero de temporadas:</label>
+                    <input id="nunero_temporadas" name="numero_temporadas" type="text" minlength="3" maxlength="120" required/>
+
+                    <label for="imageUrl">URL da imagem (opcional):</label>
+                    <input id="imageUrl" name="imageUrl" type="url"/>
+
+                    <button type="submit">Cadastrar series</button> 
+                </form>
+
+                <p id="resposta"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Prática de formulários HTML.</p>
+        </footer>
+    </body>
+</html>
